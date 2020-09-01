@@ -7,8 +7,8 @@ const Register = ()=>{
     return(
         <>
         <ScreenTitle>Cadastro</ScreenTitle>
-        <TextInput placeholder='user@email.com.br'/>
-        <input className='text-input' type='password' placeholder='password'/>
+        <TextInput placeholder='user@email.com.br' onChangeText={(text)=> console.log("Texto", text)}/>
+        <TextInput placeholder='Nome' onChangeText={(text)=> console.log("Texto", text)}/>
         <Button>Cadastrar</Button>
         </>
     )
