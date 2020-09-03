@@ -1,8 +1,14 @@
 import React from 'react'
+import Task from '../Components/Task'
 
-const TaskList = ()=>{
-    return(
-        <h3>Aqui futuramente as tarefas</h3>
+const TaskList = ({ tasks, onTaskDeleted, onTaskUpdated }) => {
+    return (
+        <>
+
+            {tasks.map((task) => (
+                <Task task={task} onTaskDeleted={onTaskDeleted} onTaskUpdated={onTaskUpdated} key={task.id}/>))}
+
+        </>
     )
 }
 

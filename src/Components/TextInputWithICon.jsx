@@ -8,6 +8,7 @@ const TextInputWithIcon = ({placeholder, onChangeText, icon, onPress})=>{
             <TextInput
             placeholder={placeholder}
             onChangeText={onChangeText}
+            onEnterPressed = {onPress}
             />
             <i className={`fa icon fa-${icon}`} onClick={onPress}/>
         </div>
